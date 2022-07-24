@@ -153,6 +153,6 @@ void ConstFoo(const Foo& foo)
     //foo.NonConstFunction();
 
     // Legal because it is marked const and therefor cannot change the internal state.
-    foo.ConstFunction();
-    cout << "Foo's member int after ConstFunction is " << foo.member_int << endl << endl;;
+    cout << "Result of Foo's ConstFunction is member_int * 2 => " << foo.ConstFunction() << endl;
+    cout << "Foo's member int after ConstFunction is " << foo.member_int << endl << endl;
 }
